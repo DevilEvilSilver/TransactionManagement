@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/UpdateGDNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="Tên giao dịch" />
+
+    <EditText
+        android:id="@+id/UpdateGDMoneyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/UpdateGDNameText"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="Số tiền" />
+
+    <EditText
+        android:id="@+id/UpdateGDDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/UpdateGDMoneyText"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="Ngày giao dịch" />
+
+    <Button
+        android:id="@+id/UpdateGDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UpdateGDDateText"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:text="Lưu"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

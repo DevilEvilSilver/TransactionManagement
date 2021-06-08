@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:id="@+id/textThemGD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Tài khoản"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TenTaikhoan"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:text="Tên tài khoản:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textThemGD" />
+
+    <TextView
+        android:id="@+id/TenTaikhoanView"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TenTaikhoan" />
+
+    <TextView
+        android:id="@+id/SoDuHienTai"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:text="Số dư hiện tại còn:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TenTaikhoanView" />
+
+    <TextView
+        android:id="@+id/SoDuView"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoDuHienTai" />
+
+    <TextView
+        android:id="@+id/textDoiTenTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Đổi tên người dùng"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SoDuView" />
+
+    <EditText
+        android:id="@+id/TenTaiKhoanInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Tên tài khoản mới"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThemGD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDoiTenTaiKhoan" />
+
+    <Button
+        android:id="@+id/buttonTenTaiKhoan"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:text="Đổi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDoiTenTaiKhoan" />
+
+    <TextView
+        android:id="@+id/textDoiMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Đổi mật khẩu"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TenTaiKhoanInput" />
+
+    <EditText
+        android:id="@+id/MatKhauCuInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Nhập mật khẩu cũ"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThemGD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDoiMatKhau" />
+
+    <EditText
+        android:id="@+id/MatKhauMoiInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Nhập mật khẩu mới"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThemGD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MatKhauCuInput" />
+
+    <EditText
+        android:id="@+id/MatKhauMoiLaiInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Nhập lại mật khẩu mới"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThemGD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MatKhauMoiInput" />
+
+
+    <Button
+        android:id="@+id/buttonMatKhau"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:text="Đổi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDoiMatKhau" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
